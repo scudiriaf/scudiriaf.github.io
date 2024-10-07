@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(10, 129, 129);
+    margin-left: 15px; 
+}
+
+h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    background-color: rgb(41, 143, 146);
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+    display: block;
+    color: white;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 2px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #4d0054;
+}
+
+.input-container input:focus ~ label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.input-container input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.input-with-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #8d1e1e;
+    color: antiquewhite;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.label-container {
+    display: flex;
+}
+
+.label-container label {
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+.label-container:focus {
+    cursor: pointer;
+}
+
+button-container button {
+    padding-top: 20px;
+    height: 70px;
+    align-self: center;
+}
+
+button:hover {
+    background: #21052b;
+    color: #fcfcfc;
+    box-shadow: 0 0 5px #867d8a, 0 0 25px #d971fb, 0 0 50px #d971fb, 0 0 200px #d971fb;
+}
+
+.content-page {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.input-items {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.right-column {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.rainbow-container {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 600px) {
+    .content-page {
+        flex-direction: column;
+        margin-left: 0;
+    }
+  
+    .input-items {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+  
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .right-column {
+        margin-left: 0;
+    }
+
+    .rainbow-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
